@@ -1,0 +1,24 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "model": "kilo/gpt-4o",
+  "small_model": "kilo/gpt-4o-mini",
+  "default_agent": "code",
+  "snapshot": true,
+  "share": "manual",
+  "autoupdate": "notify",
+  "compaction": {
+    "auto": true,
+    "prune": true
+  },
+  "provider": {
+    "kilo": {
+      "options": {
+        "timeout": 300000
+      }
+    }
+  },
+  "mcp": {},
+  "skills": {
+    "paths": ["./.kilo/skills"]
+  }
+}
