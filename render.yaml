@@ -25,13 +25,13 @@ services:
       - key: DB_TYPE
         value: postgresdb
       - key: DB_POSTGRESDB_HOST
-        sync: false
+        value: ep-dry-wind-b36yza4y-pooler.c-4.ap-southeast-1.aws.neon.tech
       - key: DB_POSTGRESDB_PORT
         value: "5432"
       - key: DB_POSTGRESDB_DATABASE
         value: neondb
       - key: DB_POSTGRESDB_USER
-        sync: false
+        value: neondb_owner
       - key: DB_POSTGRESDB_PASSWORD
         sync: false
       - key: DB_POSTGRESDB_SSL_ENABLED
@@ -40,7 +40,3 @@ services:
         value: "false"
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
-      - key: WEBHOOK_URL
-        sync: false
-      - key: N8N_EDITOR_BASE_URL
-        sync: false
